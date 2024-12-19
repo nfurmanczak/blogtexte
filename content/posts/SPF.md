@@ -6,6 +6,7 @@ tags: ["email", "DNS", "SPF"]
 ShowToc: true
 ---
 
+---
 Bei SPF handelt es sich um einen Standard, um das Versenden von unautorisierten E-Mails zu verhindern. Hierbei wird ein TXT-Record (Text-Record) in die DNS-Zone eingetragen. Dieser TXT-Record enthält eine Liste von IP-Adressen oder anderen DNS-Namen, die für diese Domain E-Mails versenden dürfen.
 
 Beispiel SPF-Record für die Domain example.com:

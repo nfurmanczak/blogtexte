@@ -6,6 +6,7 @@ tags: ["mysql", "TLS"]
 ShowToc: true
 ---
 
+---
 Jede sensible Information in einer Datenbank wurde vermutlich vorher über das Netzwerk übertragen. Kommunizieren Anwendungen über ein Netzwerk mit einer Datenbank, sollte geprüft werden, ob es sinnvoll ist, diesen Traffic via TLS abzusichern. Dies kann auch bei internen Netzen durchaus sinnvoll sein. Denn unverschlüsselter Datenverkehr kann nicht nur einfach ausgelesen, sondern auch manipuliert werden.
 
 Zunächst prüfen wir, ob die installierte MariaDB oder MySQL Version auch TLS unterstützt. In den meisten Fällen wurde das Paket vermutlich mit einer entsprechenden TLS-Bibliothek gebaut. Häufig ist das OpenSSL oder YaSSL. Wer seine Datenbank ohne TLS-Unterstützung kompiliert hat, muss diese leider nochmal erneut kompilieren.

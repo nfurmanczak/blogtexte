@@ -6,6 +6,7 @@ tags: ["Nginx", "TLS"]
 ShowToc: true
 ---
 
+---
 Basiskonfiguration, um HTTPS auf Nginx zu aktivieren. Alle Konfigurationen wurden in Nginx Version 1.14 getestet.
 
     server {

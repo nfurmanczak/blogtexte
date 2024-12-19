@@ -6,6 +6,7 @@ tags: ["vscode"]
 ShowToc: true
 ---
 
+---
 Eine kurze Liste mit aus meiner Sicht empfehlenswerten Plugins für VScode.
 
 ## Polacode
