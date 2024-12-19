@@ -1,0 +1,36 @@
+baseURL = 'https://furmanczak.de/'
+languageCode = 'de-de'
+title = 'furmanczak.de'
+theme = 'hugo-PaperMod'
+summaryLength = '18'
+email = "nikolai.furmanczak@gmx.de"
+copyright = '© 2024 furmanczak.de'
+tableOfContents = true
+
+[params]
+  enableSearch = true
+  env = "production"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+#[taxonomies]
+#tag = 'tags'
+
+[menu]
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 1
+[[menu.main]]
+name = "Tags"
+url = "/tags/"
+weight = 2
+[[menu.main]]
+name = "Suche"
+pageref = "/search/"
+weight = 3
+[[menu.main]]
+name = "Kontakt"
+url = "/contact/"
+weight = 4
