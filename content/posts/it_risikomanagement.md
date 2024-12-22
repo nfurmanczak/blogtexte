@@ -1,10 +1,10 @@
 ---
 title: "IT-Risikomanagement"
 date: 2024-12-19T22:31:41+02:00
-draft: false
+draft: true
 tags: ["risikomanagement"]
 ShowToc: true
 ---
 ---
 
-Hello World
+IT-Risikomanagment ist vermutlich eins der trockenden Theman

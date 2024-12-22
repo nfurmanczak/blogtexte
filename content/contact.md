@@ -3,9 +3,23 @@ title = "Kontakt"
 hidedate = true
 +++
 
+Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV:  
+
 Nikolai Furmanczak  
 Osteroder Str. 7  
 40595 Duesseldorf  
 Deutschland  
 
-**nikolai {aet} furmanczak . de**
+**nikolai {aet} furmanczak . de**  
+
+## Datenschutz
+
+Diese Webseite respektiert Ihre Daten.  
+
+Dieser Blog ist darauf ausgelegt, so datensparsam wie möglich zu sein. Aus diesem Grund werden keine Cookies verwendet. Die Informationen zum ausgewählten Theme (Dark/Light) werden im Local Storage des Browsers gespeichert. Es werden keine Schlüssel, UUIDs oder ähnliche Werte gespeichert, die eine spätere Identifizierung der Nutzer ermöglichen. Zudem wird keine Tracking- oder Analysesoftware (wie Google Analytics, Matomo etc.) eingesetzt, um das Nutzerverhalten zu analysieren.  
+
+Aus Sicherheitsgründen und zur Fehleranalyse wird die IP-Adresse der Besucher im Logfile des Webservers für 14 Tage gespeichert. Die Speicherung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO, da sie zur Sicherstellung der technischen Sicherheit und zur Behebung von Fehlern notwendig ist. Die IP-Adressen werden ausschließlich zu diesem Zweck verwendet und nicht mit anderen Daten zusammengeführt.
+
+## Urheberrecht und Haftung
+
+Alle Inhalte dieser Webseite (Texte, Bilder, etc.) unterliegen dem Urheberrecht von Nikolai Furmanczak, sofern nicht anders angegeben. Jede Nutzung, Vervielfältigung oder Verbreitung bedarf der ausdrücklichen Genehmigung. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen.
