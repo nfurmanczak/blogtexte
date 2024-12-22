@@ -12,7 +12,7 @@ Deutschland
 
 **nikolai {aet} furmanczak . de**  
 
-## Datenschutz
+#### Datenschutz
 
 Diese Webseite respektiert Ihre Daten.  
 
@@ -20,6 +20,6 @@ Dieser Blog ist darauf ausgelegt, so datensparsam wie möglich zu sein. Aus dies
 
 Aus Sicherheitsgründen und zur Fehleranalyse wird die IP-Adresse der Besucher im Logfile des Webservers für 14 Tage gespeichert. Die Speicherung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO, da sie zur Sicherstellung der technischen Sicherheit und zur Behebung von Fehlern notwendig ist. Die IP-Adressen werden ausschließlich zu diesem Zweck verwendet und nicht mit anderen Daten zusammengeführt.
 
-## Urheberrecht und Haftung
+#### Urheberrecht und Haftung
 
 Alle Inhalte dieser Webseite (Texte, Bilder, etc.) unterliegen dem Urheberrecht von Nikolai Furmanczak, sofern nicht anders angegeben. Jede Nutzung, Vervielfältigung oder Verbreitung bedarf der ausdrücklichen Genehmigung. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte wird keine Gewähr übernommen.

@@ -2,7 +2,7 @@
 title: "LinkedIn-Posts: Wenn Algorithmen den Diskurs bestimmen"
 date: 2024-12-22T22:31:41+02:00
 draft: false
-tags: ["LinkedIn, Social Media"]
+tags: ["LinkedIn", "Social Media"]
 ShowToc: true
 ---
 
