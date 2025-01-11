@@ -16,7 +16,7 @@ Key-ID: D369560D
 GPG Fingerprint: 7B24 CD06 1D84 6FD6 0896  5C55 FBCB 59D4 D369 560D  
 Public GPG Key: 
 - [Keyserver: https://keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/7B24CD061D846FD608965C55FBCB59D4D369560D)  
-- [https://furmanczak.de/files/furmanczak.pub]({{< relref "/files/furmanczak.pub" >}})
+- [https://furmanczak.de/files/furmanczak.pub](https://furmanczak.de/files/furmanczak.pub)
 
 
 #### Datenschutz
