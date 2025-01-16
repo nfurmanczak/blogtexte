@@ -28,7 +28,7 @@ Das Identifizieren von Risiken sollte nach Möglichkeit immer ein kreativer Proz
 Bei kleineren Teams empfiehlt sich ein gemeinsames Brainstorming, bei dem Ideen gesammelt werden. Je nach Organisation kann es auch hilfreich sein, Stakeholder oder Mitglieder aus anderen Abteilungen einzuladen, sofern diese relevant sind. Einen sehr ähnlichen Ansatz kann man mit dem Brainwriting verfolgen. Hierbei schreiben die Teilnehmer einzeln oder in kleinen Gruppen die Risiken, die ihnen einfallen, auf. Anschließend wird die Liste mit anderen Teams getauscht, die diese ergänzen. Es ist ebenfalls möglich, dass die Ideen anschließend im Team gemeinsam bewertet werden. Alternativ können auch Interviews geführt werden, indem einzelne Mitarbeiter oder kleine Gruppen befragt werden. Letzteres ist relativ zeitintensiv, kann aber zu wertvollen Informationen führen.
 
 
-# Risiken bewerten
+## Risiken bewerten  
 
 Risiken können nach verschiedenen Faktoren bewertet werden. Auch die Bewertung sollte im Team gemeinsam besprochen werden. Es ist hilfreich, sich hier auf die Berufserfahrung der Mitarbeiter zu beziehen. Durch die Bewertung ergibt sich auch, ob ein Risiko für die Organisation relevant ist oder nicht. Je nach Risikoart können sich diese unterscheiden. Die wohl naheliegendsten sind Eintrittswahrscheinlichkeit und Auswirkung. Daneben gibt es aber noch weitere Faktoren:  
 - **Risikoerkennung:** Wie schnell kann das Risiko erkannt werden, bevor Schaden entsteht?  
