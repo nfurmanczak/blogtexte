@@ -9,14 +9,7 @@ ShowToc: true
 Risikomanagement ist in vielen Bereichen wichtig, darunter auch in der IT. Während man es oft mit dem System Engineering und OPS verbindet, kann auch in der Softwareentwicklung ein effektiver Risikomanagementprozess implementiert werden – allerdings mit einem anderen Schwerpunkt.  In manchen Branchen ist IT-Risikomanagement gesetzlich oder durch externe Stellen verpflichtend. Oft gibt es jedoch keine konkreten Vorgaben, wie ein solcher Prozess aussehen muss, sondern lediglich die Anforderung, dass ein Prozess vorhanden sein sollte. Bei bestimmten Zertifizierungen, wie etwa **ISO 27001**, **NIST**, oder **Basel III**, wird ein Risikomanagementprozess ebenfalls vorausgesetzt. Doch auch ohne gesetzliche Verpflichtung ist es für Organisationen sinnvoll, ein Risikomanagementsystem einzuführen, da es langfristig mehr Transparenz und Sicherheit schafft.
 
 ## Risikomanagement-Prozess
-Im Kern geht es darum, potenzielle Ereignisse zu analysieren, die die IT-Infrastruktur beeinflussen könnten, deren Auswirkungen zu bewerten und geeignete Maßnahmen zu ergreifen. Dieser Prozess hilft, Schwachstellen zu identifizieren, Auswirkungen zu verstehen und den Aufwand für Gegenmaßnahmen zu priorisieren. Ein Risikomanagementprozess soll nicht alle Risiken beseitigen, sondern eine systematische Identifikation und Bewertung ermöglichen, um entsprechende Maßnahmen zu ergreifen.
-
-Es gibt viele Frameworks, die als Grundlage dienen können. Zu den bekanntesten gehören sicherlich:  
-- **COBIT**  
-- **NIST Risk Management Framework (RMF)**  
-- **ISO 31000**  
-
-Diese Standards sind hilfreich, können aber für kleinere Organisationen oft zu komplex sein. Wichtig ist es, einen einfachen, praxisnahen Ansatz zu finden. Grundsätzlich folgt das Risikomanagement immer diesen vier  Phasen:  
+Im Kern geht es darum, potenzielle Ereignisse zu analysieren, die die IT-Infrastruktur beeinflussen könnten, deren Auswirkungen zu bewerten und geeignete Maßnahmen zu ergreifen. Dieser Prozess hilft, Schwachstellen zu identifizieren, Auswirkungen zu verstehen und den Aufwand für Gegenmaßnahmen zu priorisieren. Ein Risikomanagementprozess soll nicht alle Risiken beseitigen, sondern eine systematische Identifikation und Bewertung ermöglichen, um entsprechende Maßnahmen zu ergreifen. Es gibt viele Frameworks, die als Grundlage dienen können. Zu den bekanntesten gehören sicherlich: COBIT, NIST Risk Management Framework (RMF) oder ISO 31000. Diese Standards sind hilfreich, können aber für kleinere Organisationen oft zu komplex sein. Wichtig ist es, einen einfachen, praxisnahen Ansatz zu finden. Grundsätzlich folgt das Risikomanagement immer diesen vier  Phasen:  
 1. **Risiken identifizieren**  
 2. **Risiken bewerten**  
 3. **Maßnahmen ergreifen**  
