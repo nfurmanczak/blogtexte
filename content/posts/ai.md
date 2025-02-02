@@ -31,10 +31,10 @@ Mir ist bewusst, dass meine gesammelten Erfahrungen über LLMs sehr subjektiv si
 
 P.S.: Wer sich dafür interessiert, wie KIs im Allgemeinen funktionieren, kann sich diesen guten Vortrag "Wie funktioniert ChatGPT ganz genau?" von Michael Christen auf der FrosCon 2024 ansehen: https://media.ccc.de/v/froscon2024-3054-wie_funktioniert_chatgpt_ganz_genau.
 
-Quellen:
-[1] https://www.golem.de/news/entwickler-forum-chatgpt-verursacht-traffic-einbrueche-bei-stack-overflow-2305-174120.html
-[2] https://www.linux-magazin.de/news/crawler-der-ki-dienste-stoeren-massiv-websites/
-[3] https://medium.com/@maxime_26729/the-rise-of-ai-crawling-bots-8e0bd8be6a36
-[4] https://github.com/ai-robots-txt/ai.robots.txt
-[5] https://www.iese.fraunhofer.de/blog/halluzinationen-generative-ki-llm/
+Quellen:  
+[1] https://www.golem.de/news/entwickler-forum-chatgpt-verursacht-traffic-einbrueche-bei-stack-overflow-2305-174120.html  
+[2] https://www.linux-magazin.de/news/crawler-der-ki-dienste-stoeren-massiv-websites/  
+[3] https://medium.com/@maxime_26729/the-rise-of-ai-crawling-bots-8e0bd8be6a36  
+[4] https://github.com/ai-robots-txt/ai.robots.txt  
+[5] https://www.iese.fraunhofer.de/blog/halluzinationen-generative-ki-llm/  
 [6] https://www.golem.de/news/ki-erfindet-fallzitate-wieder-blamiert-sich-ein-anwalt-wegen-chatgpt-2502-192968.html
