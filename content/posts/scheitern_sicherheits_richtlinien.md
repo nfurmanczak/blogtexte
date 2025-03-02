@@ -1,5 +1,5 @@
 ---
-title: "Warum IT-Sicherheitskonzepte scheitern"
+title: "Warum Unternehmen IT-Sicherheit unterschätzen"
 date: 2025-02-28T21:35:41+02:00
 draft: false
 tags: ["IT-Security"]
@@ -25,7 +25,7 @@ Um dieser Wissenslücke entgegenzuwirken, gibt es zwei zentrale Ansätze:
 
 Vor allem für kleinere Unternehmen und Organisationen ist es jedoch häufig unrealistisch, eine dedizierte CISO-Position (Chief Information Security Officer) zu schaffen. Daher ist es in vielen Fällen nachhaltiger, bestehende Mitarbeiter im Bereich IT-Sicherheit weiterzubilden, um langfristig ein höheres Sicherheitsniveau zu erzielen.
 
-## Kosten
+## Bewertung von Kosten für Sicherheitsmaßnahmen
 Die Kosten von Cyberangriffen lassen sich oft nur schwer beziffern, da ihre Auswirkungen äußerst vielfältig und unvorhersehbar sind. Neben den unmittelbaren Schäden entstehen auch indirekte Kosten, etwa für die Wiederherstellung der IT-Infrastruktur, potenzielle Strafzahlungen bei fahrlässigem Handeln oder Reputationsverluste durch negative Berichterstattung – Faktoren, die sich nicht immer direkt in Zahlen ausdrücken lassen.
 
 Im Gegensatz dazu sind die Kosten für Sicherheitsmaßnahmen – etwa für Software, Hardware, Schulungen oder externe Dienstleister – offensichtlich und greifbar.
@@ -52,7 +52,7 @@ Die Organisation und das Management tragen dabei die Verantwortung, die notwendi
 Zudem darf nicht vergessen werden, dass IT-Sicherheit ein fortlaufender Prozess ist, der kontinuierlich an die aktuelle Bedrohungslage angepasst und optimiert werden muss. Eine einmalige Umsetzung reicht nicht aus – Sicherheitsstrategien müssen regelmäßig überprüft und weiterentwickelt werden, um neuen Angriffsmethoden standzuhalten.
 
 
-# Quellen:
+# Quellen
 [1] bitkom e.V (2024), Angriffe auf die deutsche Wirtschaft nehmen zum, https://www.bitkom.org/Presse/Presseinformation/Wirtschaftsschutz-2024  
 [2] Bundeskriminalamt (2023) Bundeslagebild Cybercrime 2023, https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/Lagebilder/Cybercrime/2023/CC_2023.html  
 [3] Oosthek, K., Cable, J. und Smaragdakis, G. (2023), A Tale of Two Markets: Investigating the Ransomware Payments Economy, https://cacm.acm.org/research/a-tale-of-two-markets-investigating-the-ransomware-payments-economy/  
