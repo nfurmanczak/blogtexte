@@ -160,5 +160,5 @@ Trotz dieser Kritikpunkte ist klar: Die Bedrohungslage durch Cyberangriffe wäch
 [3] [FAQ zu NIS2 vom BSI](https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-FAQ/FAQ-zu-NIS-2_node.html), eine FAQ-Seite vom BSI zu NIS2, welche einige interessante Fragen sowie Antworten enthält  
 [4] [Betroffenheitsprüfung zu NIS2 vom BSI](https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Betroffenheitspruefung/nis-2-betroffenheitspruefung_node.html), die Seite behandelt noch einmal ausführlich, wer betroffen ist von NIS2, und bietet eine einfache Betroffenheitsprüfung  
 [5] [NIS2 EU-Richtlinie](https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32022L2555), Link zur deutschsprachigen Version der NIS2-Richtlinie  
-[6] [Expertenkritik an geplanter Umsetzung der NIS2-Richtlinie](https://www.bundestag.de/dokumente/textarchiv/2024/kw45-pa-inneres-cyber-1026336),
+[6] [bundestag,de](https://www.bundestag.de/dokumente/textarchiv/2024/kw45-pa-inneres-cyber-1026336), Expertenkritik an geplanter Umsetzung der NIS2-Richtlinie
 [7] [heise.de](https://www.heise.de/hintergrund/Cybersicherheit-Was-Unternehmen-ueber-die-NIS2-Richtlinie-wissen-muessen-9626331.html), ausführlicher Artikel bezüglich NIS2 von Heise
