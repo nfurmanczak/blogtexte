@@ -1,8 +1,8 @@
 ---
 title: "Die NIS2 Richtlinie"
-date: 2025-03-25T20:35:41+02:00
+date: 2025-03-24T20:35:41+02:00
 draft: false
-tags: ["NIS2","IT-Security"]
+tags: ["NIS2", "IT-Security"]
 ShowToc: true
 ---
 
