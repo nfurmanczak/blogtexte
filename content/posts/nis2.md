@@ -1,7 +1,7 @@
 ---
 title: "Die NIS2 Richtlinie"
-date: 2025-03-22T21:35:41+02:00
-draft: true
+date: 2025-03-25T20:35:41+02:00
+draft: false
 tags: ["NIS2","IT-Security"]
 ShowToc: true
 ---
@@ -16,7 +16,9 @@ Zwei Aspekte sind dabei besonders hervorzuheben:
 
 - Verzögerte Umsetzung in Deutschland: Die Frist zur Umsetzung von NIS2 in nationales Recht endete am 17. Oktober 2024. Deutschland hat diese Frist nicht eingehalten. Zwar liegt seit Januar 2024 ein Referentenentwurf für das NIS2-Umsetzungsgesetz (NIS2UmsuCG) vor, doch bislang wurde dieser nicht verabschiedet. Durch die vorgezogene Bundestagswahl im Februar 2025 wird nun erwartet, dass sich der Gesetzgebungsprozess weiter verzögert, da der Entwurf dem neuen Bundestag erneut vorgelegt werden muss.
 
-Nach aktuellem Stand ist damit zu rechnen, dass das NIS2UmsuCG im Laufe des zweiten oder dritten Quartals 2025 beschlossen wird. Geplant ist, dass es am Tag nach der Verkündung ohne weitere Übergangsfrist in Kraft tritt. Der aktuelle Stand vom NIS2UmsuCG kann auf der Webseite des [BMI](https://www.bmi.bund.de/SharedDocs/gesetzgebungsverfahren/DE/CI1/nis2umsucg.html) eingesehen werden. Durch die verzögerte Umsetzung scheinen einige Unternehmen in Deutschland NIS2 nicht direkt auf dem Radar zu haben. Allerdings ist es empfehlenswert dringend zu prüfen ob man von NIS2 betroffen ist und welche Vorgaben noch umgesetzt müssen. 
+Nach aktuellem Stand ist damit zu rechnen, dass das NIS2UmsuCG im Laufe des zweiten oder dritten Quartals 2025 beschlossen wird. Geplant ist, dass es am Tag nach der Verkündung ohne weitere Übergangsfrist in Kraft tritt. Der aktuelle Stand des NIS2UmsuCG kann auf der Webseite des BMI eingesehen werden.
+
+Durch die verzögerte Umsetzung scheinen einige Unternehmen in Deutschland NIS2 nicht direkt auf dem Radar zu haben oder überhaupt zu wissen, dass sie potenziell von NIS2 betroffen sind. Allerdings ist es dringend empfehlenswert zu prüfen, ob man von NIS2 betroffen ist und welche Vorgaben noch umgesetzt werden müssen. Das BSI wird nach aktuellem Stand der Informationen nicht proaktiv auf die von NIS2 betroffenen Unternehmen zugehen.
 
 # Das Ziel der NIS2-Richtlinie
 Mit der NIS2-Richtlinie verfolgt die Europäische Union das Ziel, die Cyber- und Informationssicherheit innerhalb des Binnenmarkts flächendeckend zu verbessern. Angesichts zunehmender digitaler Vernetzung, steigender Cyberbedrohungen und immer stärkerer Abhängigkeit von digitalen Infrastrukturen soll NIS2 sicherstellen, dass Unternehmen und öffentliche Stellen in kritischen und wichtigen Sektoren einheitliche Mindeststandards für IT-Sicherheit umsetzen. Gleichzeitig soll die Richtlinie mehr Transparenz schaffen – etwa durch Meldepflichten bei Sicherheitsvorfällen – und die Resilienz gegenüber Angriffen und Störungen deutlich erhöhen. Damit ist NIS2 ein zentraler Baustein der europäischen Strategie für digitale Souveränität und eine Antwort auf die wachsenden Risiken für Wirtschaft, Staat und Gesellschaft im digitalen Raum
@@ -65,10 +67,10 @@ Kontrollen können anlasslos erfolgen – etwa stichprobenartig – aber auch an
 
 Es ist jedoch kein Geheimnis, dass das BSI bereits stark ausgelastet ist. Daher ist davon auszugehen, dass nur ein Bruchteil der betroffenen Unternehmen tatsächlich auch kontrolliert wird. Auf diesen Umstand sollte man sich jedoch keinesfalls verlassen – denn die gesetzlichen Pflichten gelten unabhängig davon, ob eine Kontrolle erfolgt oder nicht.
 
-# Inhalte der NIS2-Richtlnie
+# Inhalte von NIS2
 
 ## Sicherheitsmaßnahmen
-Unternehmen die von NIS2 betroffen sind müssen folgende Sicherheißtmaßnahmen umsetzten: 
+Unternehmen die von NIS2 betroffen sind müssen folgende Sicherheitsmaßnahmen umsetzten: 
 
 - Risikoanalyse und Sicherheit für Informationssysteme
 - Bewältigung von Sicherheitsvorfällen
@@ -84,6 +86,8 @@ Unternehmen die von NIS2 betroffen sind müssen folgende Sicherheißtmaßnahmen 
 - Sichere Kommunikation (Sprach, Video- und Text)
 - Sichere Notfallkommunikatiom
 
+Es soll noch einmal ausdrücklich gesagt sein, dass diese Maßnahmen für das gesamte Unternehmen gelten – und nicht nur für die IT oder IT-Abteilungen.
+
 Aus den Anforderungen der NIS2-Richtlinie lässt sich ableiten, dass ein IT-Risikomanagement die Grundlage für deren Umsetzung bildet. Unternehmen müssen zunächst ihre Infrastruktur erfassen und bewerten, welchen Risiken sie ausgesetzt ist – zum Beispiel anhand der CIA-Trias (Vertraulichkeit, Integrität und Verfügbarkeit) oder auf Basis etablierter Frameworks wie ISO/IEC 27005, NIST RMF oder COSO ERM.
 
 Darauf basierend sind technische und organisatorische Maßnahmen zu definieren und umzusetzen. NIS2 betont dabei, dass diese Maßnahmen stets verhältnismäßig und angemessen zum Risiko sein müssen. Ein wirksames Risikomanagement ist daher kein einmaliges Projekt, sondern ein kontinuierlicher Prozess, der regelmäßig überprüft und aktualisiert werden muss – insbesondere, um neue Risiken zu identifizieren oder bestehende Maßnahmen auf ihre Wirksamkeit zu prüfen.
@@ -96,7 +100,7 @@ Teilweise überschneiden sich die Anforderungen auch mit einem ISMS. Allerdings 
 
 Nicht zuletzt müssen alle Mitarbeitenden – einschließlich der Geschäftsführung und Entscheidungsverantwortlichen – regelmäßig im Bereich IT-Sicherheit geschult werden. Schulungen sollten unter anderem auf Themen wie Ransomware, Phishing und Social Engineering eingehen, um ein grundlegendes Sicherheitsbewusstsein im gesamten Unternehmen zu etablieren.
 
-## Lieferketten
+## Lieferkettensicherheit
 Ein wichtiges Element der NIS2-Richtlinie ist die Sicherheit in der Lieferkette. NIS2 verpflichtet betroffene Einrichtungen nicht nur dazu, die eigene IT-Sicherheit auszubauen, sondern auch sicherzustellen, dass Dienstleister und externe Partner keine Schwachstelle im eigenen Gesamtsystem darstellen. Unternehmen müssen daher Risiken aus der Zusammenarbeit mit IT-Dienstleistern, Softwareanbietern, Hosting-Providern oder auch Cloud-Plattformen identifizieren und steuern.
 
 Konkret bedeutet das: Es müssen technische und organisatorische Anforderungen an Dienstleister definiert und vertraglich vereinbart werden – z. B. in Form von Sicherheitsstandards, Meldepflichten bei Vorfällen, regelmäßigen Updates, Zugriffskontrollen oder Auditrechten. Auch sollten Unternehmen dokumentieren können, wie sie Dienstleister auswählen, prüfen und überwachen.Nach Möglichkeit sollte ein Dienstleister kein Single Point of Failure sein, und mögliche Abhängigkeiten durch Dienstleister sollten strategisch erfasst werden. Eine ISO-27001 Zertifizierung des Dienstleisters allein genügt dabei nicht – entscheidend ist, dass die tatsächlichen Maßnahmen dem Stand der Technik entsprechen und auf das eigene Risikoprofil abgestimmt sind. So können potenzielle Schwachstellen in der Lieferkette minimiert und regulatorische Anforderungen nachweislich erfüllt werden.
@@ -133,8 +137,8 @@ Abschlussbericht (30 Tage nach Frühwarnung):
 ## Verantwortlichkeiten definieren
 Die Geschäftsführung und Vorstand sind verantwortlich für die Umsetzung der NIS2 Maßnahmen und auch unter umständen persönlich haftbar wenn grob fahrlässig gehandelt wurde. Es müssen im Unternehmen klare verantwortlichkeiten und Zuständigkeiten definiert werden (Beispielweise CISO oder Sicherheitsbeauftragte).
 
-## Dokumentation und Nachweißpflicht
-Untennehmen sollten alle getroffenen Sicherheitsmaßnahmen, durchgeführte Audits, Richtlinien/Prozesse oder auch Risikobewertungen dokumentieren damit nachvollzogen werden kann was gemacht wurde und auch wieso. Diese Dokumentation 
+## Dokumentation und Nachweispflicht
+Unternehmen sollten alle getroffenen Sicherheitsmaßnahmen, durchgeführten Audits, Richtlinien/Prozesse oder auch Risikobewertungen dokumentieren, damit nachvollzogen werden kann, was gemacht wurde – und auch warum. Diese Dokumentation dient zudem als Nachweis, falls das BSI eine Kontrolle bezüglich der NIS2-Umsetzung durchführt.
 
 # Kritik an NIS2
 Auch wenn die Absicht der NIS2-Richtlinie vom Prinzip her gut ist, gibt es vor allem aus der Wirtschaft, von IT-Dienstleistern und aus dem Mittelstand immer wieder Kritik und Bedenken, ob die Richtlinie in ihrer aktuellen Form umsetzbar und zielführend ist.
@@ -145,13 +149,16 @@ Zusätzlich wird der bürokratische und organisatorische Aufwand bemängelt, den
 
 Ein weiterer Kritikpunkt betrifft die fehlende Harmonisierung innerhalb der EU. Zwar ist NIS2 als EU-Richtlinie gedacht, die einheitliche Mindeststandards schaffen soll, doch die Umsetzung liegt bei den Mitgliedstaaten in nationalen Gesetzen. Dadurch drohen in der Praxis unterschiedliche Anforderungen je nach Land, was für international tätige Unternehmen zu zusätzlichem Aufwand führt.
 
+Zudem wird die Vielzahl an Ausnahmen in der NIS2-Richtlinie kritisiert. Behörden wie die Justiz, die Strafverfolgungsbehörden sowie deren Dienstleister, aber auch Ministerien und das Bundeskanzleramt sind davon ausgenommen. Kritiker bemängeln, dass gerade der Staat mit gutem Beispiel vorangehen sollte. Die zahlreichen Ausnahmen untergraben in ihren Augen die Glaubwürdigkeit und Vorbildfunktion der NIS2-Regelung.
+
 Trotz dieser Kritikpunkte ist klar: Die Bedrohungslage durch Cyberangriffe wächst, und einheitliche Sicherheitsstandards sind notwendig. Entscheidend wird sein, wie praxisnah und verhältnismäßig die einzelnen EU-Staaten die Anforderungen in nationales Recht umsetzen – und wie Unternehmen dabei unterstützt werden. Auch wird vermutlich erst die Zeit zeigen, wie praxistauglich NIS2 tatsächlich ist. 
 
 
-# Quellen
-[1] bitkom e.V (2024), Angriffe auf die deutsche Wirtschaft nehmen zum, https://www.bitkom.org/Presse/Presseinformation/Wirtschaftsschutz-2024  
-[2] Bundeskriminalamt (2023) Bundeslagebild Cybercrime 2023, https://www.bka.de/DE/AktuelleInformationen/StatistikenLagebilder/Lagebilder/Cybercrime/2023/CC_2023.html  
-[3] Oosthek, K., Cable, J. und Smaragdakis, G. (2023), A Tale of Two Markets: Investigating the Ransomware Payments Economy, https://cacm.acm.org/research/a-tale-of-two-markets-investigating-the-ransomware-payments-economy/  
-[4] Homand Security & Governmental Affairs (2022), Use of Cryptocurrency in Ransomware Attacks, Available Data, and National Security
-Concerns, https://www.hsgac.senate.gov/wp-content/uploads/imo/media/doc/HSGAC%20Majority%20Cryptocurrency%20Ransomware%20Report.pdf  
-[5] Zehnder, M. (2021), Die Prospect Theory: Warum wir Menschen nicht immer die besten Entscheidungen treffen, https://hub.hslu.ch/business-psychology/prospect-theory/
+# Literatur
+[1] [openkritis.de](https://www.openkritis.de/), eine Webseite mit vielen hilfreichen Informationen bezüglich KRITIS und NIS2  
+[2] [Informationen zu NIS2 vom BSI](https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/nis-2-regulierte-unternehmen_node.html), die Webseite vom BSI zum Thema NIS2  
+[3] [FAQ zu NIS2 vom BSI](https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-FAQ/FAQ-zu-NIS-2_node.html), eine FAQ-Seite vom BSI zu NIS2, welche einige interessante Fragen sowie Antworten enthält  
+[4] [Betroffenheitsprüfung zu NIS2 vom BSI](https://www.bsi.bund.de/DE/Themen/Regulierte-Wirtschaft/NIS-2-regulierte-Unternehmen/NIS-2-Betroffenheitspruefung/nis-2-betroffenheitspruefung_node.html), die Seite behandelt noch einmal ausführlich, wer betroffen ist von NIS2, und bietet eine einfache Betroffenheitsprüfung  
+[5] [NIS2 EU-Richtlinie](https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:32022L2555), Link zur deutschsprachigen Version der NIS2-Richtlinie  
+[6] [Expertenkritik an geplanter Umsetzung der NIS2-Richtlinie](https://www.bundestag.de/dokumente/textarchiv/2024/kw45-pa-inneres-cyber-1026336),
+[7] [heise.de](https://www.heise.de/hintergrund/Cybersicherheit-Was-Unternehmen-ueber-die-NIS2-Richtlinie-wissen-muessen-9626331.html), ausführlicher Artikel bezüglich NIS2 von Heise
