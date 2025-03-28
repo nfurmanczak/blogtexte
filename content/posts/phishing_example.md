@@ -1,7 +1,7 @@
 ---
 title: "Phishing-Beispiel"
 date: 2025-03-26T20:35:41+02:00
-draft: true
+draft: false
 tags: ["Phishing","IT-Sicherheit"]
 ShowToc: true
 ---
