@@ -1,5 +1,6 @@
 baseURL = 'https://furmanczak.de/'
 languageCode = 'de-de'
+defaultContentLanguage = 'de'
 title = 'furmanczak.de'
 theme = 'hugo-PaperMod'
 summaryLength = '18'
