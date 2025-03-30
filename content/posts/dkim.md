@@ -7,14 +7,17 @@ ShowToc: true
 TocOpen: true
 ---
 
+
+
 ---
+# Einleitung
 DKIM (DomainKeys Identify Mails) ermöglicht es, ausgehende E-Mails (Header und Body) mithilfe eines privaten Schlüssels zu signieren. Diese Signatur kann der Empfänger mit dem öffentlichen Schlüssel aus der DNS-Zone des Versenders überprüfen. Passt die Signatur, so wurde die E-Mail auf dem Weg vom Sender zum Empfänger (höchstwahrscheinlich) nicht durch Dritte verändert. Zudem sollte nur der vorgesehene und vertrauenswürdige Versandserver im Besitz des privaten Schlüssels sein. Die Signatur sollte allerdings nicht mit einer Verschlüsselung verwechselt werden. Bei einer Signatur wird lediglich der Hashwert einer Information verschlüsselt, nicht aber der Inhalt der E-Mail. Möchten Sie sensible Informationen per E-Mail versenden, sollten Sie auf eine Transportverschlüsselung ([TLS-Verbindung](https://de.wikipedia.org/wiki/Transport_Layer_Security) zwischen beiden E-Mail-Servern) und/oder Ende-zu-Ende-Verschlüsselung (z.B.: [GPG](https://de.wikipedia.org/wiki/GNU_Privacy_Guard) oder [S/MIME](https://de.wikipedia.org/wiki/S/MIME)) setzen.
 
 Vielleicht ergibt sich nicht direkt der Nutzen von DKIM. Ein Ersatz für eine Verschlüsselung ist DKIM ja nicht. Vielmehr kann man DKIM als Erweiterung des Sender Policy Framework (SPF) ansehen. Bei SPF werden die IP-Adressen der E-Mail-Server in einem DNS-Eintrag verzeichnet. DKIM erweitert dies um einen öffentlichen Schlüssel. Damit kann der Domaininhaber festlegen, welche Server für den E-Mail-Versand dieser Domain autorisiert sind. Zudem ist DKIM de facto Voraussetzung, um später auch erfolgreich [DMARC](https://de.wikipedia.org/wiki/DMARC) einzusetzen.
 
 Mit DKIM haben wir nun eine weitere wichtige Information (den öffentlichen Schlüssel) in unserer DNS-Zone. Natürlich kann ein öffentlicher Schlüssel gefahrlos im Internet verteilt werden. Allerdings können DNS-Abfragen an verschiedenen Stellen manipuliert werden. Kurz gesagt: Ohne [DNSSEC](https://de.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) gilt eine Antwort von einem DNS-Server als nicht vertrauenswürdig. Die DNS-Zone entwickelt sich also Stück für Stück zu einer sensiblen Informationsquelle, die geschützt werden soll. DNSSEC ist keine zwingende Voraussetzung für DKIM (oder SPF oder DMARC), allerdings ist DNSSEC immer eine sinnvolle Erweiterung, um auch Antworten vom DNS-Server zu signieren und vor Manipulation zu schützen.
 
-### Erstellen eines Schlüsselpaares
+# Erstellen eines Schlüsselpaares
 
 Ein Schlüsselpaar für DKIM kann man über verschiedene Wege erstellen. Ich empfehle aber das Tool `opendkim-genkey` aus dem Paket `opendkim-tools`. Dies erzeugt den öffentlichen Schlüssel direkt im passenden Format für die DNS-Zone. Der folgende Befehl erstellt ein Schlüsselpaar für die Domain `example.com` mit 2048 Bit (Standardwert) und dem Selektor (`-s`) `key1`:
 
@@ -26,13 +29,13 @@ Der Selektor (`-s`) kann frei gewählt werden. Er dient dazu, den Schlüssel in 
 
 Der Befehl erzeugt zwei Dateien: Den privaten Schlüssel (`key1.private`) und eine Textdatei mit dem öffentlichen Schlüssel (`key1.txt`) für den DNS-Eintrag. Alles zwischen den Klammern muss in den DNS-Eintrag übertragen werden.
 
-### DKIM-DNS-Eintrag
+# DKIM-DNS-Eintrag
 
 Der öffentliche DKIM-Schlüssel wird als TXT-Eintrag in der DNS-Zone hinterlegt. Der Name setzt sich aus dem gewählten Selektor, der Domain und dem Zusatz `_domainkey` zusammen. Unser öffentlicher Schlüssel aus dem Beispiel wäre also unter folgender Adresse aufrufbar: `key1._domainkey.example.com`.
 
 Der Zusatz `_domainkey` darf nicht verändert werden und muss unbedingt vorhanden sein. In der DKIM-Signatur der E-Mail steht die Domain und der genutzte Selektor. Mit diesen Informationen kann der Empfänger die Signatur validieren.
 
-### openDKIM konfigurieren
+# openDKIM konfigurieren
 
 Nach der Installation sollte ein Verzeichnis für den (oder die) openDKIM-Schlüssel eingerichtet werden. Der Verzeichnisname und Speicherort kann frei gewählt werden. Allerdings muss der Benutzer `opendkim` die entsprechenden Rechte haben, um den Schlüssel lesen zu dürfen.
 
@@ -85,7 +88,7 @@ Erwähnenswert sind hier die folgenden Parameter:
 | SignatureAlgorithm | Legt den verwendeten Hashalgorithmus und das kryptografische Verfahren für die Signatur fest. "rsa-sha256" sind der Standard und gute Werte. Andere Verfahren werden meist nicht unterstützt. Mittels `opendkim -V` kann man die unterstützten Algorithmen einsehen.                                                                                                                                                                                                                                                                                        |
 | OversignHeaders    | Beim Oversigning wird ein Header mehrfach signiert, auch wenn ein Header nur einmal vorkommt. Die Signatur wird also einmal über den vorhandenen Header (und dessen Inhalt) gebildet und dann über einen nicht vorhandenen Header (also nichts). Wird die E-Mail nachträglich verändert und ein vorhandener Header noch einmal hinzugefügt, in der Hoffnung, Fehler in E-Mail-Clients auszunutzen, wird die DKIM-Signatur ungültig.                                                                                                                         |
 
-### Postfix konfigurieren
+# Postfix konfigurieren
 
 Der openDKIM-Dienst wird in der Postfix-Konfiguration (`/etc/postfix/main.cf`) als Mail-Filter (Milter) eingetragen. Falls noch kein Milter in Postfix konfiguriert ist, kann folgende Konfiguration genutzt werden:
 
@@ -106,7 +109,7 @@ Der Befehl kann optional noch um den Schalter `-v` ergänzt werden. Wie bei Linu
 
 Jetzt können wir eine Testmail versenden und unsere DKIM-Signatur in der E-Mail überprüfen. Wir können natürlich auch eine E-Mail an uns selbst senden, um die DKIM-Signatur zu prüfen, es sei denn, wir haben die DKIM-Signatur für unsere eigene Domain deaktiviert. Ich würde aber eher eine Testmail an ein Gmail-, AOL-, Yahoo- oder Outlook/Microsoft-Konto senden. Viele Mailbox-Anbieter vermerken im Quelltext der E-Mail auch den Status der DKIM-Signatur.
 
-### DKIM-Signatur
+# DKIM-Signatur
 
 Eine DKIM-Signatur setzt sich aus verschiedenen Tags zusammen. Anhand des folgenden Beispiels werden wir uns die wichtigsten Tags genauer ansehen:
 
@@ -132,13 +135,13 @@ DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=example.com; s=key1;
 | `bh= ...;`                    | Hash des E-Mail-Bodys.                                                                   |
 | `b= ...;`                     | Hash des E-Mail-Headers, einschließlich aller wichtigen Metadaten aus der DKIM-Signatur. |
 
-### DKIM-Alignment
+# DKIM-Alignment
 
 Wie bei SPF gibt es auch bei DKIM ein Alignment. Ein Alignment ist erreicht, wenn die Domain im `From:` und der Domain-Tag der DKIM-Signatur (`d=...`) identisch sind. Hierzu ein kurzes Beispiel:
 
 Die E-Mail wurde von der E-Mail-Adresse `From: bob@example.de` gesendet. Der öffentliche DKIM-Schlüssel befindet sich in der Domain `d=example.de`. Beide Domains sind identisch, es gibt also ein DKIM-Alignment. Dies würde auch bestehen, wenn die E-Mail von `From: bob@web.example.de` gesendet worden wäre. Allerdings nur, wenn im DMARC-Record das Alignment für DKIM als relaxed gesetzt ist.
 
-### ARC (Authenticated Received Chain)
+# ARC (Authenticated Received Chain)
 
 Wer sich öfter mal den Quelltext von E-Mails angesehen hat, dem könnte vielleicht eine ARC-Signatur oder ein ARC-Seal aufgefallen sein. Vor allem die größeren Mailbox-Provider wie Gmail, AOL oder Microsoft setzen ARC schon seit einigen Jahren ein.
 
@@ -153,7 +156,7 @@ Beispiel einer ARC-Signatur (bestehend aus ARC-Seal, ARC-Message-Signature und A
     ARC-Authentication-Results: i=1; mx.google.com;
     dkim=pass header.i=@gmail.com header.s=20210112 header.b=qbAPGVPb; spf=pass (google.com: domain of versender@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=versender@gmail.com; dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
 
-### Monitoring für DKIM
+# Monitoring für DKIM
 
 Es ist durchaus sinnvoll, die DKIM-Infrastruktur zu überwachen. Das Prüfen des öffentlichen Schlüssels in der DNS-Zone ist relativ simpel. Man sollte aber nicht nur prüfen, ob der DNS-Record vorhanden ist, sondern ob auch der korrekte Schlüssel inkl. weiterer Parameter in der DNS-Zone eingetragen ist.
 

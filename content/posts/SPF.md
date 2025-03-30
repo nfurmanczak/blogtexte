@@ -7,8 +7,10 @@ ShowToc: true
 ---
 
 ---
+# Einleitung
 Bei SPF handelt es sich um einen Standard, um das Versenden von unautorisierten E-Mails zu verhindern. Hierbei wird ein TXT-Record (Text-Record) in die DNS-Zone eingetragen. Dieser TXT-Record enthält eine Liste von IP-Adressen oder anderen DNS-Namen, die für diese Domain E-Mails versenden dürfen.
 
+# SPF-Record
 Beispiel SPF-Record für die Domain example.com:
 
 	"v=spf1 ip4:216.10.0.10/30 ip4:180.29.0.22 a:mail.example.com -all"
@@ -17,6 +19,7 @@ Jeder SPF-Record beginnt mit dem Visions Tag `v=spf1. Aktuell (Jan. 2022) gibt e
 
 Der SPF-Record muss für die Domain im Envelope Header (RFC 5321) der E-Mail gesetzt werden. Diese Domain wird auch beim SMTP-Handshake verwendet. Die Envelope Domain sollte nicht mit der Domain im From-Header (Friendly-From, RFC 5322) verwechselt werden. Wer sich unsicher ist, kann sich gerne selbst eine Test-E-Mail senden und im Quelltext nach dem Return-Path Header suchen. In diesem Header steht die Domain aus dem Envelope Header.
 
+## SPF-Mechanismen
 In einem SPF-Record können über folgende Mechanismen IP-Adressen definiert werden:
 
 |Mechanismus|Funktion|
@@ -26,6 +29,7 @@ In einem SPF-Record können über folgende Mechanismen IP-Adressen definiert wer
 |ip4 oder ip6|	Hinter ipv4 und ip6 kann jeweils eine einzelne IP-Adresse oder ein Netz in CIDR Notation angegeben werden. Bei einzelnen Adressen muss kein /32 angegeben werden.|
 |include:|Erweitert den SPF-Record um den SPF-Record von einer anderen Domain. Dieser SPF-Record darf auch wieder ein include enthalten. Dies kann sich bis zu 10mal wiederholen.|
 
+## SPF-Qualifikatoren
 Das `all` am Ende eines SPF-Records hat eine wichtige Bedeutung und wird fast immer auch in einem SPF-Record benötigt. Einzige Ausnahme ist ein `redirect`. Das `all` besagt, wie der Empfänger mit E-Mails von anderen IP-Adressen umgehen soll, welche nicht im SPF-Record hinterlegt sind. Ausschlaggebend hierfür ist das Zeichen vor dem all. SPF-Records werden immer von links nach rechts gelesen. Nach einem Treffer wird sofort aufgehört und der SPF-Record nicht weiter ausgewertet oder weitere DNS-Querys für includes abgesetzt. Optimalerweise sollte der SPF-Record so aufgebaut werden, dass die häufigsten IP-Adressen am Anfang stehen.
 
 |Qualifikator|Funktion|
@@ -43,6 +47,8 @@ Wer schon einen SPF-Record hat, kann auch via redirect auf einen anderen SPF-Rec
 
 Tipp: Aufgrund der TTL einer DNS-Zone kann es etwas dauern, bis eine Änderung an einem DNS-Eintrag überall angekommen ist. Bei wichtigen Changes kann man 24 Stunden vorher die TTL auf 300 Sekunden ändern. Man sollte allerdings nicht vergessen, nach dem Change die TTL wieder auf einen höheren Wert zu setzen (default ist meist 86400). Ansonsten bekommt der eigene DNS-Server mehr Last als gewünscht.
 Validieren von SPF-Records
+
+# SPF-Record prüfen
 
 Mit dem Tool dig kann man DNS-Einträge auslesen. Um die Ausgabe etwas übersichtlicher zu haben, kann man die Option +short angeben.
 
