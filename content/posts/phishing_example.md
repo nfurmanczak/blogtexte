@@ -2,7 +2,7 @@
 title: "Phishing-Beispiel"
 date: 2025-03-26T20:35:41+02:00
 draft: false
-tags: ["Phishing","IT-Sicherheit"]
+tags: ["Phishing","IT-Security"]
 ShowToc: true
 ---
 # Einleitung
