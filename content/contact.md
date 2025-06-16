@@ -3,13 +3,6 @@ title = "Kontakt"
 hidedate = true
 +++
 
-Verantwortlich für den Inhalt gemäß § 18 Abs. 2 MStV:  
-
-Nikolai Furmanczak  
-Osteroder Str. 7  
-40595 Duesseldorf  
-Deutschland  
-
 **nikolai {aet} furmanczak . de**  
 
 Key-ID: D369560D  
