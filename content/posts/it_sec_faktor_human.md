@@ -50,7 +50,7 @@ E-Mail-Adressen folgen in vielen Unternehmen einem einheitlichen Muster. Kennt e
 
 Manchmal reicht sogar ein kurzer Anruf im Unternehmen, bei dem Angreifer unter einem Vorwand nach scheinbar harmlosen Informationen fragen. Was auf den ersten Blick nicht sensibel wirkt, kann in Kombination mit weiteren Daten ein realistisches Angriffsszenario ermöglichen.  
 
-Das bedeutet nicht, dass Mitarbeitende nichts mehr in sozialen Netzwerken posten dürfen. Aber sie sollten sich bewusst sein: Auch triviale Informationen sind für Angreifer wertvoll (Motto: *Der Feind liest mit*). Unternehmen sollten daher ihre Belegschaft sensibilisieren und prüfen, ob interne Leitlinien für Social-Media-Posts sinnvoll sind.  
+Das bedeutet nicht, dass Mitarbeitende nichts mehr in sozialen Netzwerken posten dürfen. Aber sie sollten sich bewusst sein: Auch triviale Informationen sind für Angreifer wertvoll (Motto: *Der Feind liest mit*). Unternehmen sollten daher ihre Belegschaft sensibilisieren und prüfen, ob interne Leitlinien für Social-Media-Posts sinnvoll sind. Je weniger Informationen einem Angreifer vorliegen, desto schwieriger ist es für ihn, ein glaubwürdiges Pretexting-Szenario zu entwickeln.
 
 
 ## Warum Technik allein nicht reicht

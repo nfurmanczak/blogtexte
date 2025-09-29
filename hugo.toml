@@ -3,20 +3,49 @@ languageCode = 'de-de'
 defaultContentLanguage = 'de'
 title = 'furmanczak.de'
 theme = 'hugo-PaperMod'
-summaryLength = '18'
+summaryLength = 18
 email = "nikolai.furmanczak@gmx.de"
 copyright = '© 2025 furmanczak.de'
 tableOfContents = true
+enableRobotsTXT = true
+
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "github"
+    noClasses = false
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [params]
   enableSearch = true
   env = "production"
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[permalinks]
+  posts = "/posts/:slug/"
 
 #[taxonomies]
 #tag = 'tags'
+
+
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.googleAnalytics]
+    anonymizeIP = true
 
 [menu]
 [[menu.main]]

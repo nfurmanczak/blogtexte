@@ -1,9 +1,16 @@
-+++
-title = "Kontakt"
+---
+title: "Kontakt"
 hidedate = true
-+++
+sitemap:
+  priority: 0.0
+  changefreq: never
+robots: "noindex, nofollow"
+---
 
-**nikolai {aet} furmanczak . de**  
+**nikolai {aet} furmanczak . de** 
+Furmanczak, Nikolai
+Osteroder Str. 7
+40595 Duesseldorf
 
 Key-ID: D369560D  
 GPG Fingerprint: 7B24 CD06 1D84 6FD6 0896  5C55 FBCB 59D4 D369 560D  
