@@ -1,6 +1,6 @@
 ---
 title: "Kontakt"
-hidedate = true
+hidedate: true
 sitemap:
   priority: 0.0
   changefreq: never
