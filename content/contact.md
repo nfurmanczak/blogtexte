@@ -1,6 +1,7 @@
 ---
 title: "Kontakt"
 hidedate: true
+ShowReadingTime: false
 sitemap:
   priority: 0.0
   changefreq: never
