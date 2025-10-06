@@ -42,7 +42,7 @@ enableRobotsTXT = true
 [privacy]
   [privacy.youtube]
     privacyEnhanced = true
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.googleAnalytics]
     anonymizeIP = true
