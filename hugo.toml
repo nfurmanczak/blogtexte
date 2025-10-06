@@ -27,7 +27,7 @@ enableRobotsTXT = true
   env = "production"
   ShowReadingTime = true
   ShowCodeCopyButtons = true
-  ShowCodeCopyButtons = true
+  ShowBreadCrumbs = true
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
