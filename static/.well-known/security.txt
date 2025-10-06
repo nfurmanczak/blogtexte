@@ -1,0 +1,4 @@
+Contact: mailto:security@furmanczak.de
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: de, en
+Canonical: https://furmanczak.de/.well-known/security.txt
